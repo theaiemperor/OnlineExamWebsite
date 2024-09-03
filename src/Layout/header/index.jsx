@@ -3,6 +3,7 @@ import { Box, AppBar, Toolbar, styled, IconButton } from "@mui/material";
 import PropTypes from "prop-types";
 
 import { IconMenu2 } from "@tabler/icons-react";
+import Logo from "../../components/Global/Logo";
 
 const Header = ({ toggleMobileSidebar }) => {
   // const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
@@ -38,8 +39,9 @@ const Header = ({ toggleMobileSidebar }) => {
         >
           <IconMenu2 width="20" height="20" />
         </IconButton>
-
-        <Box flexGrow={1} />
+        <Box flexGrow={1}>
+          <Logo />
+        </Box>
       </ToolbarStyled>
     </AppBarStyled>
   );

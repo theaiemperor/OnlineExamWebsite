@@ -3,11 +3,9 @@ import Home from "../../pages/home";
 
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
-import Courses from "../../pages/Courses";
-import Profile from "../../pages/profile";
-
-import SignUp from "../../pages/auth/SignUp";
-import SignIn from "../../pages/auth/SignIn";
+import Users from "../../pages/users";
+import Courses from "../../pages/courses";
+import SignIn from "../../pages/SignIn";
 
 export default function () {
   return (
@@ -17,9 +15,8 @@ export default function () {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="courses" element={<Courses />} />
-        <Route path="profile" element={<Profile />} />
+        <Route path="users" element={<Users />} />
         <Route path="sign_in" element={<SignIn />} />
-        <Route path="sign_up" element={<SignUp />} />
       </Routes>
     </div>
   );

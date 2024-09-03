@@ -1,7 +1,6 @@
-import { useMediaQuery, Box, Drawer } from "@mui/material";
+import { useMediaQuery, Box, Drawer, Typography } from "@mui/material";
 import SidebarItems from "./SidebarItems";
 import React from "react";
-import Logo from "../../components/Global/Logo";
 
 export default function ({
   isMobileSidebarOpen,
@@ -9,6 +8,23 @@ export default function ({
   isSidebarOpen,
 }) {
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
+
+  function UserProfile() {
+    return (
+      <>
+        <Box className="w-full justify-center flex pr-9 my-5">
+          <div className="flex flex-col items-center gap-3">
+            <img
+              src="https://avatars.githubusercontent.com/u/119550818?v=4"
+              alt="user image"
+              className="w-16 rounded-full border"
+            />
+            <Typography variant="h3">Arman</Typography>
+          </div>
+        </Box>
+      </>
+    );
+  }
 
   const sidebarWidth = "270px";
 
@@ -40,11 +56,10 @@ export default function ({
             }}
             py={2}
           >
-            <Box px={2}>
-              <Logo />
-            </Box>
-            <Box>
-              <Box mt={3}>
+            <UserProfile />
+
+            <Box className="mt-7">
+              <Box>
                 <SidebarItems />
               </Box>
             </Box>
@@ -68,9 +83,7 @@ export default function ({
         },
       }}
     >
-      <Box className="p-2">
-        <Logo />
-      </Box>
+      <UserProfile />
       <SidebarItems />
     </Drawer>
   );

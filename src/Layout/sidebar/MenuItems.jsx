@@ -7,6 +7,7 @@ import {
   IconLayoutGrid,
   IconLogin,
   IconMan,
+  IconPackage,
   IconPhoto,
   IconPlus,
   IconPoint,
@@ -36,9 +37,9 @@ const Menuitems = [
   },
   {
     id: 4,
-    title: "My Profile",
+    title: "Manage Users",
     icon: IconUser,
-    href: "/profile",
+    href: "/users",
   },
   {
     id: 5,
@@ -47,10 +48,10 @@ const Menuitems = [
     href: "/sign_in",
   },
   {
-    id: 6,
-    title: "Create User",
-    icon: IconPlus,
-    href: "/sign_up",
+    id: 7,
+    title: "Not found page",
+    icon: IconPackage,
+    href: "/not_found",
   },
 ];
 
