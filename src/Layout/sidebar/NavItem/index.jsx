@@ -46,9 +46,9 @@ const NavItem = ({ item, level, pathDirect, onClick }) => {
       <ListItemStyled>
         <ListItemButton
           component={Link}
-          to={item.href}
+          to={"/OnlineExamWebsite"+item.href}
           disabled={item.disabled}
-          selected={pathDirect === item.href}
+          selected={pathDirect === "/OnlineExamWebsite"+item.href}
           target={item.external ? "_blank" : ""}
           onClick={onClick}
         >

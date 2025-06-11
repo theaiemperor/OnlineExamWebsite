@@ -9,7 +9,7 @@ export default function () {
       <div>
         Go back to{" "}
         <Link
-          to={"/"}
+          to={"/OnlineExamWebsite"}
           className="text-blue-700 cursor-pointer hover:border-b-2 border-black transition-all"
         >
           home

@@ -11,12 +11,12 @@ export default function () {
   return (
     <div>
       <Routes>
-        <Route path="*" element={<NotFound />} />
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="courses" element={<Courses />} />
-        <Route path="users" element={<Users />} />
-        <Route path="sign_in" element={<SignIn />} />
+        <Route path="/OnlineExamWebsite/*" element={<NotFound />} />
+        <Route path="/OnlineExamWebsite/" element={<Home />} />
+        <Route path="/OnlineExamWebsite/about" element={<About />} />
+        <Route path="/OnlineExamWebsite/courses" element={<Courses />} />
+        <Route path="/OnlineExamWebsite/users" element={<Users />} />
+        <Route path="/OnlineExamWebsite/sign_in" element={<SignIn />} />
       </Routes>
     </div>
   );

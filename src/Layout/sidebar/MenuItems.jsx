@@ -1,19 +1,10 @@
 import {
   IconBook,
-  IconCircleDot,
   IconHome,
-  IconInfoCircle,
-  IconLayout,
-  IconLayoutGrid,
   IconLogin,
   IconMan,
   IconPackage,
-  IconPhoto,
-  IconPlus,
-  IconPoint,
-  IconStar,
-  IconTable,
-  IconUser,
+  IconUser
 } from "@tabler/icons-react";
 
 const Menuitems = [
@@ -21,7 +12,7 @@ const Menuitems = [
     id: 1,
     title: "Home",
     icon: IconHome,
-    href: "/",
+    href: "",
   },
   {
     id: 2,

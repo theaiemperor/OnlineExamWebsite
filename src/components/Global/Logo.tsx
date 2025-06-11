@@ -17,7 +17,7 @@ type LogoProps = {
 
 export default function ({ imageUrl, link, text }: LogoProps) {
   return (
-    <LinkStyled to={link || "/"}>
+    <LinkStyled to={link || "/OnlineExamWebsite"}>
       <Box className="flex items-center gap-4 justify-center">
         <Box className="flex">
           <img
